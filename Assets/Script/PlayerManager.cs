@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerManager : MonoBehaviour
 {
+    [SerializeField] GameObject enemyEventPanel;
     [SerializeField] GameObject Playerstatuspanel;
     [SerializeField] Text hpt;
     [SerializeField] Text attackpowert;
@@ -13,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] float playerAttackdamage;
     [SerializeField] float playerDefensepower;
     [SerializeField] collegeManager collegemanager;
+    [SerializeField] MonsterBoneManager monsterBoneManager;
      bool isMove;
     void Start()
     {
@@ -71,6 +73,17 @@ public class PlayerManager : MonoBehaviour
     {
         isMove = false;
     }
+    public void EnemyEventExit()
+    {
+        isMove = true;
+        monsterBoneManager.EnemyBone();
+        enemyEventPanel.SetActive(false);
+    }
+    public void EnemyEventIn()
+    {
+        enemyEventPanel.SetActive(false);
+        FadeManager.Instance.LoadScene("BattleScene", 1.0f);
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Human")
@@ -84,6 +97,12 @@ public class PlayerManager : MonoBehaviour
             {
                 collegemanager.PureHumanEvent();
             }
+        }
+        if(collision.gameObject.tag == "Enemy")
+        {
+            isMove = false;
+            Debug.Log("敵に遭遇した");
+            enemyEventPanel.SetActive(true);
         }
     }
 }
