@@ -11,7 +11,7 @@ public class Title : MonoBehaviour
 
     public void GameStart()
     {
-        SceneManager.LoadScene("BattleScene");
+        SceneManager.LoadScene("VillageScene");
         SoundManager.instance.PlaySE(0);
     }
   
