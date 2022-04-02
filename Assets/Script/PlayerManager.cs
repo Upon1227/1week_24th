@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerManager : MonoBehaviour
 {
+    [SerializeField] GameObject Playerstatuspanel;
+    [SerializeField] Text hpt;
+    [SerializeField] Text attackpowert;
+    [SerializeField] Text defensepowert;
     [SerializeField] float playerspeed;
     [SerializeField] float playerhp;
     [SerializeField] float playerAttackdamage;
     [SerializeField] float playerDefensepower;
     [SerializeField] collegeManager collegemanager;
-    bool isMove;
+     bool isMove;
     void Start()
     {
         isMove = true;
@@ -26,6 +30,18 @@ public class PlayerManager : MonoBehaviour
      
     }
 
+    public void OnIconButton()
+    {
+        Playerstatuspanel.SetActive(true);
+        hpt.text = "HP：" + playerhp;
+        attackpowert.text = "攻撃力：" + playerAttackdamage;
+        defensepowert.text = "防御力：" + playerDefensepower;
+    }
+
+    public void OnCloseStatus()
+    {
+        Playerstatuspanel.SetActive(false);
+    }
     void Move()
     {
         if (Input.GetKey(KeyCode.W))
@@ -47,6 +63,14 @@ public class PlayerManager : MonoBehaviour
         
     }
 
+    public void MoveChangeTrue()
+    {
+        isMove = true;
+    }
+    public void MoveChangeFalse()
+    {
+        isMove = false;
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Human")
