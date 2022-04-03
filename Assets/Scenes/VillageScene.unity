@@ -459,6 +459,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 299024803}
     - target: {fileID: 401141714405170025, guid: b6e4030cf5ad24f38a5c259932c760df, type: 3}
+      propertyPath: playerhp
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 401141714405170025, guid: b6e4030cf5ad24f38a5c259932c760df, type: 3}
       propertyPath: EnemyImage
       value: 
       objectReference: {fileID: 2140649322}
@@ -490,6 +494,14 @@ PrefabInstance:
       propertyPath: monsterBoneManager
       value: 
       objectReference: {fileID: 1495062934}
+    - target: {fileID: 401141714405170025, guid: b6e4030cf5ad24f38a5c259932c760df, type: 3}
+      propertyPath: playerAttackdamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 401141714405170025, guid: b6e4030cf5ad24f38a5c259932c760df, type: 3}
+      propertyPath: playerDefensepower
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 401141714405170025, guid: b6e4030cf5ad24f38a5c259932c760df, type: 3}
       propertyPath: EnemyName.Array.size
       value: 2

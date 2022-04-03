@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MonsterBoneManager : MonoBehaviour
 {
+    
     [SerializeField] GameObject EnemyEventPoint;
     [SerializeField] int enemycount;
     [SerializeField] int XRangeMax;

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class collegeManager : MonoBehaviour
-{
+{ 
     [SerializeField] Text HumanName;
     [SerializeField] GameObject HumanPanel;
     [SerializeField] Text messagetext;

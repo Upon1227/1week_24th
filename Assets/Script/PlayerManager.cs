@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerManager : MonoBehaviour
 {
+    public static int attackpoint;
+    public static int defpoint;
+    public static int hp;
+    public static int publicenemynum;
     [SerializeField] Text EnemyEventText;
     [SerializeField] string[] EnemyName;
     [SerializeField] Image EnemyImage;
@@ -23,6 +27,9 @@ public class PlayerManager : MonoBehaviour
      bool isMove;
     void Start()
     {
+        attackpoint = (int)playerAttackdamage;
+        hp = (int)playerhp;
+        defpoint = (int)playerDefensepower;
         isMove = true;
     }
 
@@ -94,6 +101,9 @@ public class PlayerManager : MonoBehaviour
     }
     public void EnemyEventIn()
     {
+        attackpoint = (int)playerAttackdamage;
+        hp = (int)playerhp;
+        defpoint = (int)playerDefensepower;
         enemyEventPanel.SetActive(false);
         FadeManager.Instance.LoadScene("BattleScene", 1.0f);
     }
@@ -118,6 +128,7 @@ public class PlayerManager : MonoBehaviour
             int enemynum = Random.Range(0, 2);
             EnemyImage.sprite = EnemyImageSelect[enemynum];
             EnemyEventText.text = EnemyName[enemynum] + "が現れた！";
+            publicenemynum = enemynum;
             isMove = false;
             animator.SetInteger("Trans", 0);
             Debug.Log("敵に遭遇した");
