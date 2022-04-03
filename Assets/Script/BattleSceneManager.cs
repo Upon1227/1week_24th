@@ -35,6 +35,8 @@ public class BattleSceneManager : MonoBehaviour
         StartEventText.text = EnemyName[PlayerManager.publicenemynum] + "が現れた!!!";
     }
 
+    
+
     void Myturn()
     {
         for (int i = 0; i < ButtonImage.Length; i++)
@@ -63,6 +65,7 @@ public class BattleSceneManager : MonoBehaviour
     {
         PlayerHP += 50;
         EnemyTurn();
+        PlayerHPText.text = "HP：" + PlayerHP;
     }
 
 
@@ -88,7 +91,7 @@ public class BattleSceneManager : MonoBehaviour
                 Invoke("SpecialAttack", 1f);
                 break;
             case 5:
-                Invoke("Defence", 1f);
+                Invoke("Defense", 1f);
                 break;
             case 6:
                 Invoke("Defense", 1f);
@@ -98,6 +101,7 @@ public class BattleSceneManager : MonoBehaviour
 
     void Attack()
     {
+       
         if (isDef)
         {
             float EnemyAttackPoint = Random.Range(1, 5);
@@ -114,7 +118,7 @@ public class BattleSceneManager : MonoBehaviour
             statustext.text = "敵は攻撃した." + (int)EnemyAttackPoint * EnemyLev + "くらった";
             Myturn();
         }
-
+        PlayerHPText.text = "HP：" + PlayerHP;
     }
     void Defense()
     {
