@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class BattleSceneManager : MonoBehaviour
 {
@@ -22,15 +23,22 @@ public class BattleSceneManager : MonoBehaviour
     [SerializeField] Text shieldtext;
     bool isDef;
     bool isEnemyDef;
+    [SerializeField] GameObject Enemy;
+    [SerializeField] GameObject Player;
+    [SerializeField] GameObject EventText;
+    [SerializeField] GameObject Camera;
     // Start is called before the first frame update
+
     void Start()
     {
+        Enemy.gameObject.transform.DOMove(new Vector3(3.5f,1,0), 1f);
+        Player.gameObject.transform.DOMove(new Vector3(-3.5f, 1, 0),1f);
         PlayerHP = PlayerManager.hp;
         PlayerHPText.text = "HP：" + PlayerHP;
         PlayerDefencePointText.text = "防御力：" + PlayerManager.defpoint;
         PlayerAttackPointText.text = "攻撃力：" + PlayerManager.attackpoint;
         EnemyHP = 100 * EnemyLev;
-        Invoke("Myturn", 2f);
+        Invoke("Myturn", 1.2f);
         EnemyImage.sprite = EnemyImageSelect[PlayerManager.publicenemynum];
         StartEventText.text = EnemyName[PlayerManager.publicenemynum] + "が現れた!!!";
     }
@@ -51,6 +59,7 @@ public class BattleSceneManager : MonoBehaviour
         
         EnemyHP -= PlayerManager.attackpoint;
         EnemyTurn();
+        Enemy.transform.DOShakePosition(0.5f, 0.5f);
     }
     public void PlayerDefense()
     {
@@ -119,6 +128,7 @@ public class BattleSceneManager : MonoBehaviour
             Myturn();
         }
         PlayerHPText.text = "HP：" + PlayerHP;
+        Player.transform.DOShakePosition(0.5f, 0.5f);
     }
     void Defense()
     {
