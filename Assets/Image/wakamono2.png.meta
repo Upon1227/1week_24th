@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 5df47efce3f3bc340a885138c8721dbc
+guid: 39b2a05ca3909ee40b593775f6eea2d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5388789929823055851
-    second: wakamono2_0
+      213: 1084719131576043238
+    second: wakamono3_0
   - first:
-      213: 9102353231925954763
-    second: wakamono2_1
+      213: -2779211607777959420
+    second: wakamono3_1
   - first:
-      213: -4228018070249227160
-    second: wakamono2_2
+      213: -1606244405893800386
+    second: wakamono3_2
   - first:
-      213: -1334297706379511132
-    second: wakamono2_3
+      213: 2009524645139708564
+    second: wakamono3_3
   - first:
-      213: -7039604929185839752
-    second: wakamono2_4
+      213: 1637980957240070036
+    second: wakamono3_4
   - first:
-      213: -3915851827659079125
-    second: wakamono2_5
+      213: -3024704784869465436
+    second: wakamono3_5
   - first:
-      213: -1294594563344357376
-    second: wakamono2_6
+      213: 5056243684927692175
+    second: wakamono3_6
   - first:
-      213: -3087634427633829407
-    second: wakamono2_7
+      213: 4892411183416690486
+    second: wakamono3_7
   - first:
-      213: -7240016341730754558
-    second: wakamono2_8
+      213: -3431213241348573591
+    second: wakamono3_8
   - first:
-      213: -1447118762064373417
-    second: wakamono2_9
+      213: -1776394297535710018
+    second: wakamono3_9
   - first:
-      213: -9058247036445059702
-    second: wakamono2_10
+      213: -7372965100428276689
+    second: wakamono3_10
   - first:
-      213: 3502961597901254468
-    second: wakamono2_11
+      213: -6626647192916251408
+    second: wakamono3_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,253 +139,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wakamono2_0
+      name: wakamono3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 95.25
-        width: 32
-        height: 31.75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 96.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 510d1bf1c1c2735b0800000000000000
-      internalID: -5388789929823055851
+      spriteID: 6e609a69d42bd0f00800000000000000
+      internalID: 1084719131576043238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono2_1
+      name: wakamono3_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 95.25
-        width: 32
-        height: 31.75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 30
+        y: 96.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc84311c90e025e70800000000000000
-      internalID: 9102353231925954763
+      spriteID: 402a0c284c14e69d0800000000000000
+      internalID: -2779211607777959420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono2_2
+      name: wakamono3_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 95.25
-        width: 32
-        height: 31.75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 60
+        y: 96.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86cbcd257ff0355c0800000000000000
-      internalID: -4228018070249227160
+      spriteID: e3edd3c193975b9e0800000000000000
+      internalID: -1606244405893800386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono2_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 63
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4aa71a23e4f9b7de0800000000000000
-      internalID: -1334297706379511132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wakamono2_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 63
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8750ac44d9c4e4e90800000000000000
-      internalID: -7039604929185839752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wakamono2_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 63
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b220153828918a9c0800000000000000
-      internalID: -3915851827659079125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wakamono2_6
+      name: wakamono3_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 31
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 64.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00825bb8a1da80ee0800000000000000
-      internalID: -1294594563344357376
+      spriteID: 49af1f0940443eb10800000000000000
+      internalID: 2009524645139708564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono2_7
+      name: wakamono3_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 31
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 30
+        y: 64.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e97e98d8d48625d0800000000000000
-      internalID: -3087634427633829407
+      spriteID: 49f062190074bb610800000000000000
+      internalID: 1637980957240070036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono2_8
+      name: wakamono3_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 31
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 60
+        y: 64.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2008d171f7b468b90800000000000000
-      internalID: -7240016341730754558
+      spriteID: 4a26e6316071606d0800000000000000
+      internalID: -3024704784869465436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono2_9
+      name: wakamono3_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 32.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 759995f272dcaebe0800000000000000
-      internalID: -1447118762064373417
+      spriteID: f8d5de1a7d26b2640800000000000000
+      internalID: 5056243684927692175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono2_10
+      name: wakamono3_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 30
+        y: 32.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8515f02054aa4280800000000000000
-      internalID: -9058247036445059702
+      spriteID: 63743badc0655e340800000000000000
+      internalID: 4892411183416690486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono2_11
+      name: wakamono3_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 60
+        y: 32.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44f2db883050d9030800000000000000
-      internalID: 3502961597901254468
+      spriteID: 9663dc08cb1e160d0800000000000000
+      internalID: -3431213241348573591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wakamono3_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcba525ccaf857e0800000000000000
+      internalID: -1776394297535710018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wakamono3_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cce970e47fda990800000000000000
+      internalID: -7372965100428276689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wakamono3_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0.75
+        width: 30.666666
+        height: 32.25
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc236ecc7b6904a0800000000000000
+      internalID: -6626647192916251408
       vertices: []
       indices: 
       edges: []
