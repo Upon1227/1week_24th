@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class BattleSceneManager : MonoBehaviour
 {
+    [SerializeField] Text EnemyHPText;
+    [SerializeField] Text EnemyLevText;
+    [SerializeField] Text EnemyDefText;
     [SerializeField] SpriteRenderer EnemyImage;
     [SerializeField] Sprite[] EnemyImageSelect;
     [SerializeField] string[] EnemyName;
@@ -14,6 +18,7 @@ public class BattleSceneManager : MonoBehaviour
     [SerializeField] Text PlayerAttackPointText;
     [SerializeField] Text PlayerDefencePointText;
     [SerializeField] Text PlayerHPText;
+    [SerializeField] GameObject EnemyStatusPanel;
     int PlayerHP;
     int EnemyLev = 1;
     int EnemyDef;
@@ -22,9 +27,15 @@ public class BattleSceneManager : MonoBehaviour
     [SerializeField] Text shieldtext;
     bool isDef;
     bool isEnemyDef;
+    [SerializeField] GameObject Player;
+    [SerializeField] GameObject Enemy;
+    bool isMyTrun;
     // Start is called before the first frame update
     void Start()
     {
+        EnemyLev = (int)PlayerManager.EnemyLev;
+        Player.transform.DOMove(new Vector3(-3, 1.1f, 0), 1);
+        Enemy.transform.DOMove(new Vector3(3, 1.1f, 0), 1);
         PlayerHP = PlayerManager.hp;
         PlayerHPText.text = "HP：" + PlayerHP;
         PlayerDefencePointText.text = "防御力：" + PlayerManager.defpoint;
@@ -33,6 +44,14 @@ public class BattleSceneManager : MonoBehaviour
         Invoke("Myturn", 2f);
         EnemyImage.sprite = EnemyImageSelect[PlayerManager.publicenemynum];
         StartEventText.text = EnemyName[PlayerManager.publicenemynum] + "が現れた!!!";
+        EnemyHPText.text = "HP：" + EnemyHP;
+        Invoke("ActivePanel", 1.5f);
+        EnemyLevText.text = "Lev：" + EnemyLev;
+    }
+
+    void ActivePanel()
+    {
+        EnemyStatusPanel.SetActive(true);
     }
 
     
@@ -44,28 +63,47 @@ public class BattleSceneManager : MonoBehaviour
             ButtonImage[i].color = new Color(255.0f / 255.0f, 255.0f / 255.0f, 255.0f / 255.0f, 255.0f / 255.0f);
         }
         statustext.text = "あなたのターンです。内容を選んでください。";
+        isMyTrun = true;
     }
 
     public void PlayerAttack()
     {
-        
-        EnemyHP -= PlayerManager.attackpoint;
-        EnemyTurn();
+        if (isMyTrun)
+        {
+            Enemy.transform.DOShakePosition(0.5f, 1);
+            EnemyHP -= PlayerManager.attackpoint;
+            EnemyTurn();
+            isMyTrun = false;
+            EnemyHPText.text = "HP：" + EnemyHP;
+        }
+
     }
     public void PlayerDefense()
     {
-        isDef = true;
-        EnemyTurn();
+        if (isMyTrun)
+        {
+            isDef = true;
+            EnemyTurn();
+            isMyTrun = false;
+        }
     }
     public void Exit()
     {
-        FadeManager.Instance.LoadScene("", 1);
+        if (isMyTrun)
+        {
+            FadeManager.Instance.LoadScene("VillageScene", 1);
+            isMyTrun = false;
+        }
     }
     public void PlayerRecovery()
     {
-        PlayerHP += 50;
-        EnemyTurn();
-        PlayerHPText.text = "HP：" + PlayerHP;
+        if (isMyTrun)
+        {
+            PlayerHP += 50;
+            EnemyTurn();
+            PlayerHPText.text = "HP：" + PlayerHP;
+            isMyTrun = false;
+        }
     }
 
 
@@ -75,6 +113,7 @@ public class BattleSceneManager : MonoBehaviour
         {
             ButtonImage[i].color = new Color(255.0f / 255.0f, 255.0f / 255.0f, 255.0f / 255.0f, 50.0f / 255.0f);
         }
+        EnemyDefText.text = "";
         int EnemyTurnNum = Random.Range(1, 7);
         switch (EnemyTurnNum)
         {
@@ -104,7 +143,7 @@ public class BattleSceneManager : MonoBehaviour
        
         if (isDef)
         {
-            float EnemyAttackPoint = Random.Range(1, 5);
+            float EnemyAttackPoint = Random.Range(1, 8);
             int PlayerDamager = (int)EnemyAttackPoint * EnemyLev - (int)PlayerManager.defpoint;
             PlayerHP -= PlayerDamager;
             statustext.text = "敵は攻撃した." + PlayerDamager + "くらった";
@@ -113,17 +152,19 @@ public class BattleSceneManager : MonoBehaviour
         }
         else
         {
-            float EnemyAttackPoint = Random.Range(1, 5);
+            float EnemyAttackPoint = Random.Range(1, 8);
             PlayerHP -= (int)EnemyAttackPoint * EnemyLev;
             statustext.text = "敵は攻撃した." + (int)EnemyAttackPoint * EnemyLev + "くらった";
             Myturn();
         }
+        Player.transform.DOShakePosition(0.5f, 1);
         PlayerHPText.text = "HP：" + PlayerHP;
     }
     void Defense()
     {
         EnemyDef = Random.Range(1, 4) * EnemyLev;
         statustext.text = "敵は防御を選んだ." +"次の攻撃は-" + EnemyDef + "される";
+        EnemyDefText.text = "防御中,防御力：" + EnemyDef; 
         Myturn();
     }
     void SpecialAttack()
@@ -133,6 +174,7 @@ public class BattleSceneManager : MonoBehaviour
         PlayerHP -= (int)EnemyAttackPoint * EnemyLev * (int)EnemySpecialAttackPoint;
         statustext.text = "敵は特殊攻撃した." + (int)EnemyAttackPoint * EnemyLev * (int)EnemySpecialAttackPoint + "くらった";
         Myturn();
+        Player.transform.DOShakePosition(0.5f, 1);
     }
 
 }

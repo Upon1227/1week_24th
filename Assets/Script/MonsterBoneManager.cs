@@ -33,8 +33,8 @@ public class MonsterBoneManager : MonoBehaviour
         }
         for (int i = 0; i < enemycount; i++)
         {
-            int X = Random.Range(XRangeMin, XRangeMax);
-            int Y = Random.Range(YRangeMin, YRangeMax);
+            float X = Random.Range(XRangeMin, XRangeMax);
+            float Y = Random.Range(YRangeMin, YRangeMax);
             GameObject Enemy = Instantiate(EnemyEventPoint, new Vector3(X, Y, 0), Quaternion.identity);
             Enemy.tag = "Enemy";
         }

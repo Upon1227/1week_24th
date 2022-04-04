@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class PlayerManager : MonoBehaviour
 {
+    public static Vector3 savemypotision = new Vector3(-3.5f,-3.4f,0);
+    [SerializeField] GameObject HouseINPanel;
     public static int attackpoint;
     public static int defpoint;
     public static int hp;
@@ -24,9 +27,16 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] float playerDefensepower;
     [SerializeField] collegeManager collegemanager;
     [SerializeField] MonsterBoneManager monsterBoneManager;
+    [SerializeField] Text EnemyLevText;
+    public static float EnemyLev;
      bool isMove;
     void Start()
     {
+        if(SceneManager.GetActiveScene().name == "VillageScene")
+        {
+            transform.position = new Vector3(savemypotision.x,savemypotision.y - 0.5f,0);
+        }
+     
         attackpoint = (int)playerAttackdamage;
         hp = (int)playerhp;
         defpoint = (int)playerDefensepower;
@@ -41,7 +51,6 @@ public class PlayerManager : MonoBehaviour
         {
             Move();
         }
-     
     }
 
     public void OnIconButton()
@@ -109,6 +118,10 @@ public class PlayerManager : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.name == "ExitHouse")
+        {
+            FadeManager.Instance.LoadScene("VillageScene", 1f);
+        }
         if(collision.gameObject.tag == "Human")
         {
             //村人の嘘か真かを見分けるところ
@@ -125,14 +138,35 @@ public class PlayerManager : MonoBehaviour
         }
         if(collision.gameObject.tag == "Enemy")
         {
-            int enemynum = Random.Range(0, 2);
+            savemypotision = transform.position;
+            int enemynum = Random.Range(0, EnemyImageSelect.Length);
             EnemyImage.sprite = EnemyImageSelect[enemynum];
             EnemyEventText.text = EnemyName[enemynum] + "が現れた！";
             publicenemynum = enemynum;
+            EnemyLev = Random.Range(1,11);
+            EnemyLevText.text = (int)EnemyLev + "レベル";
             isMove = false;
             animator.SetInteger("Trans", 0);
             Debug.Log("敵に遭遇した");
             enemyEventPanel.SetActive(true);
         }
+        if(collision.gameObject.tag == "House")
+        {
+            savemypotision = transform.position;
+            animator.SetInteger("Trans", 0);
+            isMove = false;
+            HouseINPanel.SetActive(true);
+        }
+    }
+
+    public void InHouse()
+    {
+        FadeManager.Instance.LoadScene("HouseLeftScene", 1f);
+    }
+
+    public void ExitHouse()
+    {
+        isMove = true;
+        HouseINPanel.SetActive(false);
     }
 }

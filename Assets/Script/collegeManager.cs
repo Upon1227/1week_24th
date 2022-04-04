@@ -31,11 +31,7 @@ public class collegeManager : MonoBehaviour
         playerManager.MoveChangeFalse();
         Debug.Log("LeiHuman");
         textStop = true;
-        texts = new string[4];
-        texts[0] = "どうしたんだい？";
-        texts[1] = "なるほど";
-        texts[2] = "ボスを倒すために鍵が欲しいのね";
-        texts[3] = "鍵ならさっき〇〇がとって草原の方に逃げていったよ。";
+
     }
     public void PureHumanEvent()
     {
@@ -44,11 +40,7 @@ public class collegeManager : MonoBehaviour
         playerManager.MoveChangeFalse();
         Debug.Log("PureHuman");
         textStop = true;
-        texts = new string[4];
-        texts[0] = "どうしたんだい？";
-        texts[1] = "そうなんだ";
-        texts[2] = "ボスのところに行くために鍵が欲しいのね";
-        texts[3] = "鍵ならさっき〇〇がとって森の方に逃げていったよ。";
+
     }
 
     void message()
