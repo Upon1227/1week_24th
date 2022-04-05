@@ -1,43 +1,49 @@
 fileFormatVersion: 2
-guid: 39b2a05ca3909ee40b593775f6eea2d3
+guid: 620a09ea7de974a47a293c658ecfcdd7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1084719131576043238
-    second: wakamono3_0
+      213: 4955581870639978749
+    second: Inside-CastleTown-B (1)_0
   - first:
-      213: -2779211607777959420
-    second: wakamono3_1
+      213: -8793052011966530484
+    second: Inside-CastleTown-B (1)_1
   - first:
-      213: -1606244405893800386
-    second: wakamono3_2
+      213: 6886893670062758295
+    second: Inside-CastleTown-B (1)_2
   - first:
-      213: 2009524645139708564
-    second: wakamono3_3
+      213: -7921849592010042419
+    second: Inside-CastleTown-B (1)_3
   - first:
-      213: 1637980957240070036
-    second: wakamono3_4
+      213: -2524960048667362249
+    second: Inside-CastleTown-B (1)_4
   - first:
-      213: -3024704784869465436
-    second: wakamono3_5
+      213: -722168889487931009
+    second: Inside-CastleTown-B (1)_5
   - first:
-      213: 5056243684927692175
-    second: wakamono3_6
+      213: -480080098538885179
+    second: Inside-CastleTown-B (1)_6
   - first:
-      213: 4892411183416690486
-    second: wakamono3_7
+      213: -6255850324167058167
+    second: Inside-CastleTown-B (1)_7
   - first:
-      213: -3431213241348573591
-    second: wakamono3_8
+      213: 6859915667313273875
+    second: Inside-CastleTown-B (1)_8
   - first:
-      213: -1776394297535710018
-    second: wakamono3_9
+      213: -7162918287209007900
+    second: Inside-CastleTown-B (1)_9
   - first:
-      213: -7372965100428276689
-    second: wakamono3_10
+      213: 7912897598796899153
+    second: Inside-CastleTown-B (1)_10
   - first:
-      213: -6626647192916251408
-    second: wakamono3_11
+      213: -8241657045716656796
+    second: Inside-CastleTown-B (1)_11
+  - first:
+      213: -2569188043912742028
+    second: Inside-CastleTown-B (1)_12
+  - first:
+      213: 4272756719503652722
+    second: Inside-CastleTown-B (1)_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -82,7 +88,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 70
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,253 +145,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wakamono3_0
+      name: Inside-CastleTown-B (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 1
+        y: 200
+        width: 63
+        height: 79
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e609a69d42bd0f00800000000000000
-      internalID: 1084719131576043238
+      spriteID: df89cde9473c5c440800000000000000
+      internalID: 4955581870639978749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_1
+      name: Inside-CastleTown-B (1)_1
       rect:
         serializedVersion: 2
-        x: 30
-        y: 96.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 65
+        y: 200
+        width: 63
+        height: 85
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 402a0c284c14e69d0800000000000000
-      internalID: -2779211607777959420
+      spriteID: c4c733f58cdc8f580800000000000000
+      internalID: -8793052011966530484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_2
+      name: Inside-CastleTown-B (1)_2
       rect:
         serializedVersion: 2
-        x: 60
-        y: 96.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 131
+        y: 201
+        width: 60
+        height: 78
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3edd3c193975b9e0800000000000000
-      internalID: -1606244405893800386
+      spriteID: 7991af9fd49239f50800000000000000
+      internalID: 6886893670062758295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_3
+      name: Inside-CastleTown-B (1)_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 195
+        y: 159
+        width: 60
+        height: 107
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49af1f0940443eb10800000000000000
-      internalID: 2009524645139708564
+      spriteID: dc31b2094cfef0290800000000000000
+      internalID: -7921849592010042419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_4
+      name: Inside-CastleTown-B (1)_4
       rect:
         serializedVersion: 2
-        x: 30
-        y: 64.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 9
+        y: 127
+        width: 109
+        height: 64
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49f062190074bb610800000000000000
-      internalID: 1637980957240070036
+      spriteID: 73cf02ba63a85fcd0800000000000000
+      internalID: -2524960048667362249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_5
+      name: Inside-CastleTown-B (1)_5
       rect:
         serializedVersion: 2
-        x: 60
-        y: 64.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 131
+        y: 137
+        width: 61
+        height: 51
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a26e6316071606d0800000000000000
-      internalID: -3024704784869465436
+      spriteID: f79cb32a8375af5f0800000000000000
+      internalID: -722168889487931009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_6
+      name: Inside-CastleTown-B (1)_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 192
+        y: 63
+        width: 33
+        height: 84
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8d5de1a7d26b2640800000000000000
-      internalID: 5056243684927692175
+      spriteID: 5cfead6a1b96659f0800000000000000
+      internalID: -480080098538885179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_7
+      name: Inside-CastleTown-B (1)_7
       rect:
         serializedVersion: 2
-        x: 30
-        y: 32.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 160
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63743badc0655e340800000000000000
-      internalID: 4892411183416690486
+      spriteID: 90d920c6641ce29a0800000000000000
+      internalID: -6255850324167058167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_8
+      name: Inside-CastleTown-B (1)_8
       rect:
         serializedVersion: 2
-        x: 60
-        y: 32.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 107
+        y: 22
+        width: 79
+        height: 57
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9663dc08cb1e160d0800000000000000
-      internalID: -3431213241348573591
+      spriteID: 31c285b34f0533f50800000000000000
+      internalID: 6859915667313273875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_9
+      name: Inside-CastleTown-B (1)_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 195
+        y: 10
+        width: 25
+        height: 36
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebcba525ccaf857e0800000000000000
-      internalID: -1776394297535710018
+      spriteID: 4e4f1cfb4c3389c90800000000000000
+      internalID: -7162918287209007900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_10
+      name: Inside-CastleTown-B (1)_10
       rect:
         serializedVersion: 2
-        x: 30
-        y: 0.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 226
+        y: 10
+        width: 29
+        height: 35
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2cce970e47fda990800000000000000
-      internalID: -7372965100428276689
+      spriteID: 153a458117240dd60800000000000000
+      internalID: 7912897598796899153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wakamono3_11
+      name: Inside-CastleTown-B (1)_11
       rect:
         serializedVersion: 2
-        x: 60
-        y: 0.75
-        width: 30.666666
-        height: 32.25
-      alignment: 6
+        x: 31
+        y: 95
+        width: 65
+        height: 31
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fc236ecc7b6904a0800000000000000
-      internalID: -6626647192916251408
+      spriteID: 46d96754590cf9d80800000000000000
+      internalID: -8241657045716656796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside-CastleTown-B (1)_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 23
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b76611619685cd0800000000000000
+      internalID: -2569188043912742028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside-CastleTown-B (1)_13
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 76
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277bdad2991eb4b30800000000000000
+      internalID: 4272756719503652722
       vertices: []
       indices: 
       edges: []
