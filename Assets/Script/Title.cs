@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Title : MonoBehaviour
 {
-    // ƒ‰ƒCƒuƒ‰ƒŠ‚ğ’Ç‰Á
+    // ???C?u??????????
 
-    // ‘JˆÚ—pŠÖ”‚ğì¬
+    // ?J???p??????????
 
     public void GameStart()
     {
-        SceneManager.LoadScene("VillageScene");
+        FadeManager.Instance.LoadScene("VillageScene", 1f);
         SoundManager.instance.PlaySE(0);
     }
   

@@ -17,6 +17,7 @@ public class SmithManager : MonoBehaviour
     public static bool isSYOKI;
     [SerializeField] GameObject WarningText;
     [SerializeField] GameObject WarningText2;
+    [SerializeField] CoinManager coinManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -93,7 +94,7 @@ public class SmithManager : MonoBehaviour
             BukiBuyPanel.SetActive(true);
             AttackText.text = "攻撃力：＋００";
             DefText.text = "防御力：＋３０";
-            CostText.text = "コスト：１５０";
+            CostText.text = "コスト：２００";
             d = 30;
             a = 0;
         }
@@ -107,17 +108,30 @@ public class SmithManager : MonoBehaviour
 
     public void buy()
     {
-        if(isSYOKI == false)
+        if(isSYOKI == false && CoinManager.coin >=300)
         {
+            BukiBuyPanel.SetActive(false);
+            WarningText2.SetActive(false);
+            WarningText.SetActive(false);
+            int p = PlayerManager.attackpoint;
+            int pd = PlayerManager.defpoint;
+            PlayerManager.attackpoint = p + a;
+            PlayerManager.defpoint = pd + d;
             isSYOKI = true;
+            coinManager.OutCoin(300);
         }
-        BukiBuyPanel.SetActive(false);
-        WarningText2.SetActive(false);
-        WarningText.SetActive(false);
-        int p = PlayerManager.attackpoint;
-        int pd = PlayerManager.defpoint;
-        PlayerManager.attackpoint = p + a;
-        PlayerManager.defpoint = pd + d;
+        else if(CoinManager.coin >= 200)
+        {
+            BukiBuyPanel.SetActive(false);
+            WarningText2.SetActive(false);
+            WarningText.SetActive(false);
+            int p = PlayerManager.attackpoint;
+            int pd = PlayerManager.defpoint;
+            PlayerManager.attackpoint = p + a;
+            PlayerManager.defpoint = pd + d;
+            coinManager.OutCoin(200);
+        }
+
     }
     public void Re()
     {
