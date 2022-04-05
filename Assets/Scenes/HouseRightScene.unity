@@ -456,16 +456,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -3, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 0, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -822,7 +812,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 986f625512e8d5449a421b1bc601316f, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 00582e0481fc75d49a1ac636e7c65945, type: 2}
-  - m_RefCount: 3
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: de1a0c7d7d1c5ec4f8a6c2ddb2f5ce43, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 28e28c7a72ec3874391e0f8ee963cea0, type: 2}
@@ -855,7 +845,7 @@ Tilemap:
     m_Data: {fileID: 8090079612828978770, guid: 42c4910618df8ed40aa9d802cc455abf, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 21300000, guid: 1fd22a7a5df843b41a908df31d8f830d, type: 3}
-  - m_RefCount: 3
+  - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: fff97779b56729645a5c688ce935e976, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 4272756719503652722, guid: 620a09ea7de974a47a293c658ecfcdd7, type: 3}
@@ -874,7 +864,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -288816623573114131, guid: 67140608e9d61c94bb28e4db8c57748e, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 56
+  - m_RefCount: 55
     m_Data:
       e00: 1
       e01: 0
@@ -893,7 +883,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 56
+  - m_RefCount: 55
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -2412,7 +2402,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2563,10 +2553,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 9098609307441350788, guid: 108987405c7b8bc488dfdc24c6954ee1, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 9098609307441350788, guid: 108987405c7b8bc488dfdc24c6954ee1, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 904708e62ee661447a0e59a75f64b1b1, type: 3}
   - m_RefCount: 12

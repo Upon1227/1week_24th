@@ -14,6 +14,10 @@ public class BattleSceneManager : MonoBehaviour
     [SerializeField] AudioClip ExitSound;
     [SerializeField] AudioClip SpAttackSound;
 
+    [SerializeField] GameObject EffectCut;
+    [SerializeField] GameObject EffectDamage;
+    [SerializeField] GameObject EffectRecover;
+
     [SerializeField] Text EnemyHPText;
     [SerializeField] Text EnemyLevText;
     [SerializeField] Text EnemyDefText;
@@ -100,7 +104,7 @@ public class BattleSceneManager : MonoBehaviour
                 EnemyHP -= PlayerManager.attackpoint;
                 EnemyTurn();
                 isMyTrun = false;
-                EnemyHPText.text = "HP：" + EnemyHP;
+                EnemyHPText.text = "HP：" + EnemyHP;            
             }
 
         }
