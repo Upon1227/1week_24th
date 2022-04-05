@@ -1194,6 +1194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: collegemanager
       objectReference: {fileID: 0}
+    - target: {fileID: 4995676877491894628, guid: 9b2f7751b05c04fffa1fbad20cc52f9d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4995676877491894629, guid: 9b2f7751b05c04fffa1fbad20cc52f9d, type: 3}
       propertyPath: HumanName
       value: 
@@ -1717,7 +1721,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5905858359638809824, guid: 83fef9192aa4d47b18780af03d109d72, type: 3}
       propertyPath: enemycount
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5905858359638809825, guid: 83fef9192aa4d47b18780af03d109d72, type: 3}
       propertyPath: m_RootOrder

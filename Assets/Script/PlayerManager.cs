@@ -29,6 +29,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] MonsterBoneManager monsterBoneManager;
     [SerializeField] Text EnemyLevText;
     public static float EnemyLev;
+    [SerializeField] GameObject MovePanel;
      bool isMove;
     void Start()
     {
@@ -36,10 +37,10 @@ public class PlayerManager : MonoBehaviour
         {
             transform.position = new Vector3(savemypotision.x,savemypotision.y - 0.5f,0);
         }
-     
-        attackpoint = (int)playerAttackdamage;
-        hp = (int)playerhp;
-        defpoint = (int)playerDefensepower;
+
+        playerAttackdamage = attackpoint;
+        playerhp = hp;
+        playerDefensepower = defpoint;
         isMove = true;
     }
 
@@ -56,9 +57,9 @@ public class PlayerManager : MonoBehaviour
     public void OnIconButton()
     {
         Playerstatuspanel.SetActive(true);
-        hpt.text = "HP：" + playerhp;
-        attackpowert.text = "攻撃力：" + playerAttackdamage;
-        defensepowert.text = "防御力：" + playerDefensepower;
+        hpt.text = "HP：" + hp;
+        attackpowert.text = "攻撃力：" + attackpoint;
+        defensepowert.text = "防御力：" + defpoint;
     }
 
     public void OnCloseStatus()
@@ -110,9 +111,6 @@ public class PlayerManager : MonoBehaviour
     }
     public void EnemyEventIn()
     {
-        attackpoint = (int)playerAttackdamage;
-        hp = (int)playerhp;
-        defpoint = (int)playerDefensepower;
         enemyEventPanel.SetActive(false);
         FadeManager.Instance.LoadScene("BattleScene", 1.0f);
     }
@@ -134,6 +132,10 @@ public class PlayerManager : MonoBehaviour
             {
                 animator.SetInteger("Trans", 0);
                 collegemanager.PureHumanEvent();
+            }else if(collision.gameObject.name == "smith")
+            {
+                animator.SetInteger("Trans", 0);
+                collegemanager.SmithHumanEvent();
             }
         }
         if(collision.gameObject.tag == "Enemy")
@@ -152,21 +154,53 @@ public class PlayerManager : MonoBehaviour
         }
         if(collision.gameObject.tag == "House")
         {
+           if(collision.gameObject.name == "Lie")
+            {
+                housename = "HouseLeftScene";
+            }
+            else if(collision.gameObject.name == "Pure")
+            {
+                housename = "HouseRightScene";
+            }else if(collision.gameObject.name == "smith")
+            {
+                housename = "BlacksmithScene";
+            }
+
             savemypotision = transform.position;
             animator.SetInteger("Trans", 0);
             isMove = false;
             HouseINPanel.SetActive(true);
+            
+        }
+        if(collision.gameObject.tag == "Uma")
+        {
+            animator.SetInteger("Trans", 0);
+            isMove = false;
+            MovePanel.SetActive(true);
         }
     }
-
+    string housename;
     public void InHouse()
     {
-        FadeManager.Instance.LoadScene("HouseLeftScene", 1f);
+        FadeManager.Instance.LoadScene(housename, 1f);
     }
 
     public void ExitHouse()
     {
         isMove = true;
         HouseINPanel.SetActive(false);
+    }
+
+    public void GoMori()
+    {
+        savemypotision = transform.position;
+        FadeManager.Instance.LoadScene("ForestScene", 1.5f);
+    }
+
+    public void GoSougen()
+    {
+    
+        savemypotision = transform.position;
+        FadeManager.Instance.LoadScene("GrasslandScene", 1.5f);
     }
 }

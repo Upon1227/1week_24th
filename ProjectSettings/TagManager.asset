@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - House
   - Murabito
+  - OutSide
+  - Uma
   layers:
   - Default
   - TransparentFX

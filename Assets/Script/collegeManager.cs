@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class collegeManager : MonoBehaviour
 { 
@@ -16,6 +17,8 @@ public class collegeManager : MonoBehaviour
     bool click;//クリック判定
     bool textStop; //テキスト表示を始めるか
     [SerializeField] PlayerManager playerManager;
+    [SerializeField] GameObject SmithPanel;
+    public static int smithcount;
 
     private void Update()
     {
@@ -40,6 +43,24 @@ public class collegeManager : MonoBehaviour
         playerManager.MoveChangeFalse();
         Debug.Log("PureHuman");
         textStop = true;
+
+    }
+    public void SmithHumanEvent()
+    {
+        smithcount++;
+        if(smithcount >= 2)
+        {
+            SmithPanel.SetActive(true);
+        }
+        else
+        {
+            HumanName.text = "武器屋のおじさん";
+            HumanPanel.SetActive(true);
+            playerManager.MoveChangeFalse();
+            Debug.Log("PureHuman");
+            textStop = true;
+        }
+ 
 
     }
 
@@ -75,6 +96,10 @@ public class collegeManager : MonoBehaviour
                         textStop = false; //セリフ表示を止める
                         HumanPanel.SetActive(false);
                         playerManager.MoveChangeTrue();
+                        if(SceneManager.GetActiveScene().name == "BlacksmithScene")
+                        {
+                            SmithPanel.SetActive(true);
+                        }
                     }
                 }
             }
