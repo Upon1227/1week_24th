@@ -365,6 +365,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4621e8b3b67d14d46942c538977af7a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 315095428}
+  attacksound: {fileID: 8300000, guid: 1cf159a22a67a1347b5d5c6b1b706520, type: 3}
+  DefSound: {fileID: 0}
+  ReSound: {fileID: 0}
+  ExitSound: {fileID: 0}
+  SpAttackSound: {fileID: 0}
   EnemyHPText: {fileID: 598918267}
   EnemyLevText: {fileID: 996496629}
   EnemyDefText: {fileID: 668888202}

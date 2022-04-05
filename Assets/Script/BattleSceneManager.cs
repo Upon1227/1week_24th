@@ -6,6 +6,14 @@ using DG.Tweening;
 
 public class BattleSceneManager : MonoBehaviour
 {
+    [SerializeField] AudioSource audioSource;
+
+    [SerializeField] AudioClip attacksound;
+    [SerializeField] AudioClip DefSound;
+    [SerializeField] AudioClip ReSound;
+    [SerializeField] AudioClip ExitSound;
+    [SerializeField] AudioClip SpAttackSound;
+
     [SerializeField] Text EnemyHPText;
     [SerializeField] Text EnemyLevText;
     [SerializeField] Text EnemyDefText;
@@ -70,11 +78,31 @@ public class BattleSceneManager : MonoBehaviour
     {
         if (isMyTrun)
         {
-            Enemy.transform.DOShakePosition(0.5f, 1);
-            EnemyHP -= PlayerManager.attackpoint;
-            EnemyTurn();
-            isMyTrun = false;
-            EnemyHPText.text = "HP：" + EnemyHP;
+            if (isEnemyDef)
+            {
+                Enemy.transform.DOShakePosition(0.5f, 1);
+                int Attack = PlayerManager.attackpoint + EnemyDef;
+                if(Attack > 0)
+                {
+                    EnemyHP -= Attack;
+                    audioSource.PlayOneShot(attacksound);
+                }
+                
+                EnemyTurn();
+                isMyTrun = false;
+                EnemyHPText.text = "HP：" + EnemyHP;
+                isEnemyDef = false;
+            }
+            else
+            {
+                audioSource.PlayOneShot(attacksound);
+                Enemy.transform.DOShakePosition(0.5f, 1);
+                EnemyHP -= PlayerManager.attackpoint;
+                EnemyTurn();
+                isMyTrun = false;
+                EnemyHPText.text = "HP：" + EnemyHP;
+            }
+
         }
 
     }
@@ -85,12 +113,14 @@ public class BattleSceneManager : MonoBehaviour
             isDef = true;
             EnemyTurn();
             isMyTrun = false;
+            audioSource.PlayOneShot(DefSound);
         }
     }
     public void Exit()
     {
         if (isMyTrun)
         {
+            audioSource.PlayOneShot(ExitSound);
             FadeManager.Instance.LoadScene("VillageScene", 1);
             isMyTrun = false;
         }
@@ -99,6 +129,7 @@ public class BattleSceneManager : MonoBehaviour
     {
         if (isMyTrun)
         {
+            audioSource.PlayOneShot(ReSound);
             PlayerHP += 50;
             EnemyTurn();
             PlayerHPText.text = "HP：" + PlayerHP;
@@ -145,13 +176,20 @@ public class BattleSceneManager : MonoBehaviour
         {
             float EnemyAttackPoint = Random.Range(1, 8);
             int PlayerDamager = (int)EnemyAttackPoint * EnemyLev - (int)PlayerManager.defpoint;
-            PlayerHP -= PlayerDamager;
+            if(PlayerDamager > 0)
+            {
+                audioSource.PlayOneShot(attacksound);
+                PlayerHP -= PlayerDamager;
+            }
+
+
             statustext.text = "敵は攻撃した." + PlayerDamager + "くらった";
             Myturn();
     
         }
         else
         {
+            audioSource.PlayOneShot(attacksound);
             float EnemyAttackPoint = Random.Range(1, 8);
             PlayerHP -= (int)EnemyAttackPoint * EnemyLev;
             statustext.text = "敵は攻撃した." + (int)EnemyAttackPoint * EnemyLev + "くらった";
@@ -162,13 +200,16 @@ public class BattleSceneManager : MonoBehaviour
     }
     void Defense()
     {
+        audioSource.PlayOneShot(DefSound);
         EnemyDef = Random.Range(1, 4) * EnemyLev;
         statustext.text = "敵は防御を選んだ." +"次の攻撃は-" + EnemyDef + "される";
-        EnemyDefText.text = "防御中,防御力：" + EnemyDef; 
+        EnemyDefText.text = "防御中,防御力：" + EnemyDef;
+        isEnemyDef = true;
         Myturn();
     }
     void SpecialAttack()
     {
+        audioSource.PlayOneShot(SpAttackSound);
         float EnemyAttackPoint = Random.Range(1, 5);
         float EnemySpecialAttackPoint = Random.Range(1, 4);
         PlayerHP -= (int)EnemyAttackPoint * EnemyLev * (int)EnemySpecialAttackPoint;
