@@ -163,7 +163,7 @@ MonoBehaviour:
   d: 0
   WarningText: {fileID: 1728404340}
   WarningText2: {fileID: 1875204604}
-  coinManager: {fileID: 0}
+  coinManager: {fileID: 1899414014}
 --- !u!4 &16957549
 Transform:
   m_ObjectHideFlags: 0
@@ -4703,6 +4703,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 399993207, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416924759, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574907956, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1706981021, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6238357600880845258, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
       propertyPath: m_Color.a
       value: 0.7529412

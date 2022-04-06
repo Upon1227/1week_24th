@@ -6,8 +6,12 @@ using DG.Tweening;
 
 public class BattleSceneManager : MonoBehaviour
 {
+    [SerializeField] Text EndCoinText;
+    [SerializeField] CoinManager coin;
+    public static int Key;
     [SerializeField] AudioSource audioSource;
-
+    [SerializeField] GameObject EndWinPanel;
+    [SerializeField] GameObject EndLosePanel;
     [SerializeField] AudioClip attacksound;
     [SerializeField] AudioClip DefSound;
     [SerializeField] AudioClip ReSound;
@@ -42,9 +46,13 @@ public class BattleSceneManager : MonoBehaviour
     [SerializeField] GameObject Player;
     [SerializeField] GameObject Enemy;
     bool isMyTrun;
+    [SerializeField] Image Haikei;
+    [SerializeField] Sprite[] HaikeiSelect;
+    [SerializeField] string[] SceneNUM;
     // Start is called before the first frame update
     void Start()
     {
+        Haikei.sprite = HaikeiSelect[PlayerManager.scenenum];
         EnemyLev = (int)PlayerManager.EnemyLev;
         Player.transform.DOMove(new Vector3(-3, 1.1f, 0), 1);
         Enemy.transform.DOMove(new Vector3(3, 1.1f, 0), 1);
@@ -85,17 +93,25 @@ public class BattleSceneManager : MonoBehaviour
             if (isEnemyDef)
             {
                 Enemy.transform.DOShakePosition(0.5f, 1);
-                int Attack = PlayerManager.attackpoint + EnemyDef;
+                int Attack = PlayerManager.attackpoint - EnemyDef;
                 if(Attack > 0)
                 {
                     EnemyHP -= Attack;
                     audioSource.PlayOneShot(attacksound);
                 }
                 
-                EnemyTurn();
+           
                 isMyTrun = false;
                 EnemyHPText.text = "HP：" + EnemyHP;
                 isEnemyDef = false;
+                if(EnemyHP <= 0)
+                {
+                    Invoke("Win", 1f);
+                }
+                else
+                {
+                    EnemyTurn();
+                }
             }
             else
             {
@@ -104,11 +120,51 @@ public class BattleSceneManager : MonoBehaviour
                 EnemyHP -= PlayerManager.attackpoint;
                 EnemyTurn();
                 isMyTrun = false;
-                EnemyHPText.text = "HP：" + EnemyHP;            
+                EnemyHPText.text = "HP：" + EnemyHP;
+                if (EnemyHP <= 0)
+                {
+                    Invoke("Win", 1f);
+                }
+                else
+                {
+                    EnemyTurn();
+                }
             }
 
         }
 
+    }
+
+    public void ExitBattleScene()
+    {
+        FadeManager.Instance.LoadScene(SceneNUM[PlayerManager.scenenum], 1f);
+    }
+
+    void Win()
+    {
+        if(PlayerManager.publicenemynum == 3)
+        {
+            EndWinPanel.SetActive(true);
+            int coinrand = Random.Range(10, 21);
+            int coincaunt = coinrand * EnemyLev;
+            EndCoinText.text = "コイン" + (int)coincaunt+ "枚と鍵"+ "を獲得した";
+            coin.GetCoin((int)coincaunt);
+            Key = 1;
+        }
+        else
+        {
+            EndWinPanel.SetActive(true);
+            int coinrand = Random.Range(10, 21);
+            int coincaunt = coinrand * EnemyLev;
+            EndCoinText.text = "コイン" + (int)coincaunt + "枚を獲得した";
+            coin.GetCoin((int)coincaunt);
+        }
+
+    }
+
+    void Lose()
+    {
+        EndLosePanel.SetActive(true);
     }
     public void PlayerDefense()
     {
@@ -188,8 +244,16 @@ public class BattleSceneManager : MonoBehaviour
 
 
             statustext.text = "敵は攻撃した." + PlayerDamager + "くらった";
-            Myturn();
-    
+
+            if (EnemyHP <= 0)
+            {
+                Invoke("Lose", 1f);
+            }
+            else
+            {
+                Myturn();
+            }
+
         }
         else
         {
@@ -197,7 +261,16 @@ public class BattleSceneManager : MonoBehaviour
             float EnemyAttackPoint = Random.Range(1, 8);
             PlayerHP -= (int)EnemyAttackPoint * EnemyLev;
             statustext.text = "敵は攻撃した." + (int)EnemyAttackPoint * EnemyLev + "くらった";
-            Myturn();
+
+            if (PlayerHP <= 0)
+            {
+                PlayerHP = 0;
+                Invoke("Lose", 1f);
+            }
+            else
+            {
+                Myturn();
+            }
         }
         Player.transform.DOShakePosition(0.5f, 1);
         PlayerHPText.text = "HP：" + PlayerHP;
@@ -218,8 +291,17 @@ public class BattleSceneManager : MonoBehaviour
         float EnemySpecialAttackPoint = Random.Range(1, 4);
         PlayerHP -= (int)EnemyAttackPoint * EnemyLev * (int)EnemySpecialAttackPoint;
         statustext.text = "敵は特殊攻撃した." + (int)EnemyAttackPoint * EnemyLev * (int)EnemySpecialAttackPoint + "くらった";
-        Myturn();
         Player.transform.DOShakePosition(0.5f, 1);
+
+        if (PlayerHP <= 0)
+        {
+            PlayerHP = 0;
+            Invoke("Lose", 1f);
+        }
+        else
+        {
+            Myturn();
+        }
     }
 
 }

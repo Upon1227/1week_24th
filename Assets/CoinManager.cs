@@ -14,8 +14,9 @@ public class CoinManager : MonoBehaviour
         scenecount++;
         if(scenecount <= 1)
         {
-            GetCoin(100);
+            GetCoin(3000);
         }
+        CoinText.text = coin.ToString();
     }
 
     // Update is called once per frame
