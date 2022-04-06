@@ -1,0 +1,1344 @@
+fileFormatVersion: 2
+guid: 905483b996f82884b9f3a64940546b73
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6829955237201658181
+    second: TownBF-Forest-C_0
+  - first:
+      213: -1038684319346608705
+    second: TownBF-Forest-C_2
+  - first:
+      213: -6378028199868173511
+    second: TownBF-Forest-C_3
+  - first:
+      213: -5313037436526450224
+    second: TownBF-Forest-C_4
+  - first:
+      213: -3950223262013604548
+    second: TownBF-Forest-C_5
+  - first:
+      213: 1328951827104065786
+    second: TownBF-Forest-C_6
+  - first:
+      213: -4552711933347088935
+    second: TownBF-Forest-C_7
+  - first:
+      213: 671520411818116844
+    second: TownBF-Forest-C_8
+  - first:
+      213: 2853310532932476011
+    second: TownBF-Forest-C_9
+  - first:
+      213: -53492162792592756
+    second: TownBF-Forest-C_10
+  - first:
+      213: 489431040843646754
+    second: TownBF-Forest-C_11
+  - first:
+      213: -9207047530504614167
+    second: TownBF-Forest-C_12
+  - first:
+      213: 4924460294416028970
+    second: TownBF-Forest-C_13
+  - first:
+      213: -2556696914776640777
+    second: TownBF-Forest-C_14
+  - first:
+      213: -690509135484995956
+    second: TownBF-Forest-C_15
+  - first:
+      213: -735264795024168072
+    second: TownBF-Forest-C_16
+  - first:
+      213: 800349642079300612
+    second: TownBF-Forest-C_17
+  - first:
+      213: 2506948519056601935
+    second: TownBF-Forest-C_18
+  - first:
+      213: -9215914096479298572
+    second: TownBF-Forest-C_19
+  - first:
+      213: 1298705347032425123
+    second: TownBF-Forest-C_20
+  - first:
+      213: -8083787294363453429
+    second: TownBF-Forest-C_21
+  - first:
+      213: -500324131656903372
+    second: TownBF-Forest-C_22
+  - first:
+      213: 7230470282875042191
+    second: TownBF-Forest-C_1
+  - first:
+      213: -6889288160497508132
+    second: TownBF-Forest-C_23
+  - first:
+      213: 4141797294334674018
+    second: TownBF-Forest-C_24
+  - first:
+      213: -2256849852963355185
+    second: TownBF-Forest-C_25
+  - first:
+      213: -8080479193014580138
+    second: TownBF-Forest-C_26
+  - first:
+      213: 2570212182189945845
+    second: TownBF-Forest-C_27
+  - first:
+      213: 6419437594251430905
+    second: TownBF-Forest-C_28
+  - first:
+      213: 4340005043812870252
+    second: TownBF-Forest-C_29
+  - first:
+      213: 9159406811876322811
+    second: TownBF-Forest-C_30
+  - first:
+      213: -1977459887154075914
+    second: TownBF-Forest-C_31
+  - first:
+      213: -6582273833597976187
+    second: TownBF-Forest-C_32
+  - first:
+      213: -3672748730610113064
+    second: TownBF-Forest-C_33
+  - first:
+      213: 2200581321572400813
+    second: TownBF-Forest-C_34
+  - first:
+      213: 1260582676920388166
+    second: TownBF-Forest-C_35
+  - first:
+      213: -6587439847392553390
+    second: TownBF-Forest-C_36
+  - first:
+      213: 6101556760036386506
+    second: TownBF-Forest-C_37
+  - first:
+      213: -333369416725406058
+    second: TownBF-Forest-C_38
+  - first:
+      213: 1089568137734336560
+    second: TownBF-Forest-C_39
+  - first:
+      213: -8816485028961418852
+    second: TownBF-Forest-C_40
+  - first:
+      213: -6070104877707877076
+    second: TownBF-Forest-C_41
+  - first:
+      213: 5459177386241513224
+    second: TownBF-Forest-C_42
+  - first:
+      213: 2637435186792969646
+    second: TownBF-Forest-C_43
+  - first:
+      213: -1008185400581505783
+    second: TownBF-Forest-C_44
+  - first:
+      213: 836650651902472166
+    second: TownBF-Forest-C_45
+  - first:
+      213: 7503190094193483460
+    second: TownBF-Forest-C_46
+  - first:
+      213: -4817522558045344464
+    second: TownBF-Forest-C_47
+  - first:
+      213: -5150305341314859696
+    second: TownBF-Forest-C_48
+  - first:
+      213: 2332654344825714436
+    second: TownBF-Forest-C_49
+  - first:
+      213: 9056374285711733740
+    second: TownBF-Forest-C_50
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TownBF-Forest-C_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 280
+        width: 224
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54149310a10e8ce50800000000000000
+      internalID: 6829955237201658181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 224
+        width: 29
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5b39f5d1ad591f0800000000000000
+      internalID: -1038684319346608705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_3
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 200
+        width: 45
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933fe6bf421bc77a0800000000000000
+      internalID: -6378028199868173511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d92d75e99c4446b0800000000000000
+      internalID: -5313037436526450224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 84
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3db1345fdcfd29c0800000000000000
+      internalID: -3950223262013604548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_6
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 74
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8e42a45a2617210800000000000000
+      internalID: 1328951827104065786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_7
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 74
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d53a203e9481d0c0800000000000000
+      internalID: -4552711933347088935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_8
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 64
+        width: 47
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6c7d5b148b15900800000000000000
+      internalID: 671520411818116844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_9
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 64
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c125defcef89720800000000000000
+      internalID: 2853310532932476011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_10
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 67
+        width: 15
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8aea7e4925f14ff0800000000000000
+      internalID: -53492162792592756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227098340fecac600800000000000000
+      internalID: 489431040843646754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 35
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee82225d0ff93080800000000000000
+      internalID: -9207047530504614167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 5
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25de2ffb82375440800000000000000
+      internalID: 4924460294416028970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_14
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2b664b3b9c48cd0800000000000000
+      internalID: -2556696914776640777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_15
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8631498991da66f0800000000000000
+      internalID: -690509135484995956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87bebb48090dbc5f0800000000000000
+      internalID: -735264795024168072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_17
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 447
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c6f3052c96b1b00800000000000000
+      internalID: 800349642079300612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f437f8c45687ac220800000000000000
+      internalID: 2506948519056601935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 355
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb16de05fe7a1080800000000000000
+      internalID: -9215914096479298572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 321
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2a4cdd1ade50210800000000000000
+      internalID: 1298705347032425123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 290
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0876a7194e90df80800000000000000
+      internalID: -8083787294363453429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 257
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435d8046add7e09f0800000000000000
+      internalID: -500324131656903372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89f8c1e96ac75460800000000000000
+      internalID: 7230470282875042191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0ed364be45460a0800000000000000
+      internalID: -6889288160497508132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2640e7ce1be9a7930800000000000000
+      internalID: 4141797294334674018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc50aba140f0ea0e0800000000000000
+      internalID: -2256849852963355185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c4e657cfe5cdf80800000000000000
+      internalID: -8080479193014580138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f330d4bc5a3ba320800000000000000
+      internalID: 2570212182189945845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb0527fa7c661950800000000000000
+      internalID: 6419437594251430905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68aedfc79bca3c30800000000000000
+      internalID: 4340005043812870252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd6e2f77ffbc1f70800000000000000
+      internalID: 9159406811876322811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6e89ca5b6ae84e0800000000000000
+      internalID: -1977459887154075914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_32
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5814b0e92d017a4a0800000000000000
+      internalID: -6582273833597976187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 85
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5a7b21d76c70dc0800000000000000
+      internalID: -3672748730610113064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 84
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daebea38d090a8e10800000000000000
+      internalID: 2200581321572400813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_35
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 84
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ac9db044d7e7110800000000000000
+      internalID: 1260582676920388166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 130
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256d9ec4c56b494a0800000000000000
+      internalID: -6587439847392553390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_37
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 231
+        width: 97
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac62adabb851da450800000000000000
+      internalID: 6101556760036386506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_38
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 352
+        width: 95
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e5a112842af5bf0800000000000000
+      internalID: -333369416725406058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_39
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 288
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0303d30d27cee1f00800000000000000
+      internalID: 1089568137734336560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_40
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 220
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c918431f39d85a580800000000000000
+      internalID: -8816485028961418852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c252bd646c7a2cba0800000000000000
+      internalID: -6070104877707877076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_42
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 416
+        width: 66
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80755c8a8e4e2cb40800000000000000
+      internalID: 5459177386241513224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_43
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 447
+        width: 63
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea539e2245d0a9420800000000000000
+      internalID: 2637435186792969646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_44
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 479
+        width: 62
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90dba9248b43202f0800000000000000
+      internalID: -1008185400581505783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_45
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 340
+        width: 95
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efeebbc5516c9b00800000000000000
+      internalID: 836650651902472166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_46
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 43
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ced1a613afa02860800000000000000
+      internalID: 7503190094193483460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 43
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03da64ef1c8b42db0800000000000000
+      internalID: -4817522558045344464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_48
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 43
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d712e54907688b0800000000000000
+      internalID: -5150305341314859696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_49
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 160
+        width: 130
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407bb1784c04f5020800000000000000
+      internalID: 2332654344825714436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TownBF-Forest-C_50
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce374dc1e64bead70800000000000000
+      internalID: 9056374285711733740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
