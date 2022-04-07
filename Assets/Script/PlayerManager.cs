@@ -244,6 +244,7 @@ public class PlayerManager : MonoBehaviour
         }
         if(collision.gameObject.tag == "Uma")
         {
+            savemypotision = new Vector3(-5.51f, 2, 0);
             animator.SetInteger("Trans", 0);
             isMove = false;
             MovePanel.SetActive(true);

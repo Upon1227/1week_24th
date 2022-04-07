@@ -27,8 +27,14 @@ EditorBuildSettings:
     path: Assets/Scenes/BlacksmithScene.unity
     guid: 0ee490bd12941ed4e893a4fb567c4d68
   - enabled: 1
+    path: Assets/Scenes/ClearScene.unity
+    guid: e4a03f1c321a1ed49be16b0174b53b91
+  - enabled: 1
     path: Assets/Scenes/ForestScene.unity
     guid: 3c9ec9e6a5b30054a88f0f62bb2ad637
+  - enabled: 1
+    path: Assets/Scenes/BossScene.unity
+    guid: d2f91e572ae3f0b4f8a160c1fc4c46fe
   - enabled: 1
     path: Assets/Scenes/GrasslandScene.unity
     guid: 02fd059c69b7cdd44b8ed2ff54b205cd

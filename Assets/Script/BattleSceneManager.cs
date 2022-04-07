@@ -106,6 +106,7 @@ public class BattleSceneManager : MonoBehaviour
                 isEnemyDef = false;
                 if(EnemyHP <= 0)
                 {
+                    EnemyHP = 0;
                     Invoke("Win", 1f);
                 }
                 else
@@ -118,11 +119,11 @@ public class BattleSceneManager : MonoBehaviour
                 audioSource.PlayOneShot(attacksound);
                 Enemy.transform.DOShakePosition(0.5f, 1);
                 EnemyHP -= PlayerManager.attackpoint;
-                EnemyTurn();
                 isMyTrun = false;
                 EnemyHPText.text = "HP：" + EnemyHP;
                 if (EnemyHP <= 0)
                 {
+                    EnemyHP = 0;
                     Invoke("Win", 1f);
                 }
                 else
@@ -150,6 +151,9 @@ public class BattleSceneManager : MonoBehaviour
             EndCoinText.text = "コイン" + (int)coincaunt+ "枚と鍵"+ "を獲得した";
             coin.GetCoin((int)coincaunt);
             Key = 1;
+        }else if(PlayerManager.scenenum == 3)
+        {
+            FadeManager.Instance.LoadScene("ClearScene", 1f);
         }
         else
         {
@@ -164,7 +168,15 @@ public class BattleSceneManager : MonoBehaviour
 
     void Lose()
     {
-        EndLosePanel.SetActive(true);
+        if (PlayerManager.scenenum == 3)
+        {
+            FadeManager.Instance.LoadScene("", 1);
+        }
+        else
+        {
+            EndLosePanel.SetActive(true);
+        }
+        
     }
     public void PlayerDefense()
     {
@@ -244,7 +256,7 @@ public class BattleSceneManager : MonoBehaviour
 
 
             statustext.text = "敵は攻撃した." + PlayerDamager + "くらった";
-
+            PlayerHPText.text = "HP：" + PlayerHP;
             if (EnemyHP <= 0)
             {
                 Invoke("Lose", 1f);
@@ -292,7 +304,7 @@ public class BattleSceneManager : MonoBehaviour
         PlayerHP -= (int)EnemyAttackPoint * EnemyLev * (int)EnemySpecialAttackPoint;
         statustext.text = "敵は特殊攻撃した." + (int)EnemyAttackPoint * EnemyLev * (int)EnemySpecialAttackPoint + "くらった";
         Player.transform.DOShakePosition(0.5f, 1);
-
+        PlayerHPText.text = "HP：" + PlayerHP;
         if (PlayerHP <= 0)
         {
             PlayerHP = 0;
