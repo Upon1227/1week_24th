@@ -290,6 +290,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1416924758, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1416924759, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
       propertyPath: m_RootOrder
       value: 7
