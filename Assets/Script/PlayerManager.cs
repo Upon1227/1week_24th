@@ -42,7 +42,7 @@ public class PlayerManager : MonoBehaviour
         scenenumcaunt++;
         if(scenenumcaunt <= 1)
         {
-            hp = 100;
+            hp = 200;
         }
         if(SceneManager.GetActiveScene().name == "VillageScene")
         {
@@ -108,6 +108,7 @@ public class PlayerManager : MonoBehaviour
 
     public void OnShiro()
     {
+        savemypotision = transform.position;
         FadeManager.Instance.LoadScene("BossScene", 1f);
     }
 
@@ -271,5 +272,11 @@ public class PlayerManager : MonoBehaviour
     
         savemypotision = transform.position;
         FadeManager.Instance.LoadScene("GrasslandScene", 1.5f);
+    }
+    public void GoVillege()
+    {
+
+        savemypotision = transform.position;
+        FadeManager.Instance.LoadScene("VillageScene", 1.5f);
     }
 }

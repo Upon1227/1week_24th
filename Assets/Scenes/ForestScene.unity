@@ -3794,12 +3794,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 14740825, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1722362614}
+    - target: {fileID: 14740825, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1858485794}
     - target: {fileID: 14740825, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 14740825, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: MoveChangeTrue
+      objectReference: {fileID: 0}
+    - target: {fileID: 399993204, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6238357600880845258, guid: bb9a5f3d03019410a8500f5f09111aee, type: 3}
       propertyPath: m_Color.a

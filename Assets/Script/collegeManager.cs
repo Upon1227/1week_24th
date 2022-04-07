@@ -19,13 +19,30 @@ public class collegeManager : MonoBehaviour
     [SerializeField] PlayerManager playerManager;
     [SerializeField] GameObject SmithPanel;
     public static int smithcount;
+    [SerializeField] GameObject LastPanel;
+    public void Start()
+    {
+        if(SceneManager.GetActiveScene().name == "BossScene")
+        {
+            Boss();
+        }
 
+    }
     private void Update()
     {
         if (textStop == true)
         {
             message();
         }
+    }
+
+    public void Boss()
+    {
+        HumanPanel.SetActive(true);
+        HumanName.text = "ボス";
+        playerManager.MoveChangeFalse();
+        textStop = true;
+
     }
     public void LieHumanEvent()
     {
@@ -99,6 +116,10 @@ public class collegeManager : MonoBehaviour
                         if(SceneManager.GetActiveScene().name == "BlacksmithScene")
                         {
                             SmithPanel.SetActive(true);
+                        }
+                        else if(SceneManager.GetActiveScene().name == "BossScene")
+                        {
+                            LastPanel.SetActive(true);
                         }
                     }
                 }
