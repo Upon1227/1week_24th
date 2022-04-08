@@ -168,10 +168,9 @@ public class BattleSceneManager : MonoBehaviour
 
     void Lose()
     {
-        if (PlayerManager.scenenum == 3)
-        {
+
             FadeManager.Instance.LoadScene("GameOverScene", 1.5f);
-        }
+        
         
     }
     public void PlayerDefense()
