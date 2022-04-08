@@ -172,10 +172,6 @@ public class BattleSceneManager : MonoBehaviour
         {
             FadeManager.Instance.LoadScene("GameOverScene", 1.5f);
         }
-        else
-        {
-            EndLosePanel.SetActive(true);
-        }
         
     }
     public void PlayerDefense()
@@ -202,7 +198,15 @@ public class BattleSceneManager : MonoBehaviour
         if (isMyTrun)
         {
             audioSource.PlayOneShot(ReSound);
-            PlayerHP += 50;
+            if(PlayerHP < 200)
+            {
+                PlayerHP += 50;
+                if(PlayerHP >= 200)
+                {
+                    PlayerHP = 200;
+                }
+            }
+
             EnemyTurn();
             PlayerHPText.text = "HP：" + PlayerHP;
             isMyTrun = false;
