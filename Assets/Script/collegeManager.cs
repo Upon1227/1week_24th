@@ -47,7 +47,7 @@ public class collegeManager : MonoBehaviour
     public void LieHumanEvent()
     {
         HumanPanel.SetActive(true);
-        HumanName.text = "村人（嘘つき）";
+        HumanName.text = "村人";
         playerManager.MoveChangeFalse();
         Debug.Log("LeiHuman");
         textStop = true;
@@ -55,7 +55,7 @@ public class collegeManager : MonoBehaviour
     }
     public void PureHumanEvent()
     {
-        HumanName.text = "村人（本当）";
+        HumanName.text = "村人";
         HumanPanel.SetActive(true);
         playerManager.MoveChangeFalse();
         Debug.Log("PureHuman");
