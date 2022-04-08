@@ -14,7 +14,7 @@ public class CoinManager : MonoBehaviour
         scenecount++;
         if(scenecount <= 1)
         {
-            GetCoin(3000);
+            GetCoin(300);
         }
         CoinText.text = coin.ToString();
     }

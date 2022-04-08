@@ -79,22 +79,22 @@ public class PlayerManager : MonoBehaviour
     }
     void Move()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.R))
         {
             animator.SetInteger("Trans", 1);
             transform.position += new Vector3(0,playerspeed * Time.deltaTime,0);
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.G))
         {
             animator.SetInteger("Trans", 2);
             transform.position += new Vector3(playerspeed * Time.deltaTime, 0, 0);
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.D))
         {
             animator.SetInteger("Trans", 4);
             transform.position += new Vector3(-playerspeed * Time.deltaTime, 0, 0);
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.F))
         {
             animator.SetInteger("Trans", 3);
             transform.position += new Vector3(0, -playerspeed * Time.deltaTime, 0);
